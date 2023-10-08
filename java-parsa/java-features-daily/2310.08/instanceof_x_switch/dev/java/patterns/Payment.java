@@ -7,9 +7,10 @@ import dev.java.patterns.employee.Salaried;
 public class Payment {
 
 	public void pay(Employee employee) {
-		switch (employee.type()) {
+		switch (employee) {
 			case Salaried salaried -> paySalary(employee);
 			case Freelancer freelancer -> payInvoice(employee);
+			default -> throw new IllegalArgumentException();
 		}
 	}
 
