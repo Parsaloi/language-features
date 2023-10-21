@@ -1,0 +1,23 @@
+== .
+
+> Encountered a bug 🪲 in my practice code to learn how to use the `Optional` Java API to filter how I would read content in a file.
+
+- An IOException was thrown
+- Tried to debug a fair amount but yet to find the issue
+
+Here is my stacktrace:
+
+```bash
+Exception in thread "main" java.nio.file.NoSuchFileException: ../gutenberg/alice30.txt
+        at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:92)
+        at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:106)
+        at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111)
+        at java.base/sun.nio.fs.UnixFileSystemProvider.newByteChannel(UnixFileSystemProvider.java:218)
+        at java.base/java.nio.file.Files.newByteChannel(Files.java:380)
+        at java.base/java.nio.file.Files.newByteChannel(Files.java:432)
+        at java.base/java.nio.file.Files.readAllBytes(Files.java:3288)
+        at java.base/java.nio.file.Files.readString(Files.java:3366)
+        at java.base/java.nio.file.Files.readString(Files.java:3325)
+        at stu.parsaizme.optional_api.OptionalReview.main(OptionalReview.java:15)
+```
+
