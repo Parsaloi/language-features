@@ -1,0 +1,20 @@
+
+== java.lang.StringBuilder
+
+- `StringBuilder()` - Constructs an empty string builder
+
+- `int length()` - returns the number of code units of the builder of buffer
+
+- `StringBuilder append(String str)` - appends a string and returns `this` i.e., the current reference to a String object
+
+- `StringBuilder append(char c)` - appends a code unit and returns `this` 
+
+- `StringBuilder appendCodePoint(int cp)` - appends a code point, converting it into one or two code units, and return `this`
+
+- `void setCharAt(int i, char c)` - sets the `i`th code unit to `c`
+
+- `StringBuilder insert(int offset, String str)` - inserts a string at position `offset` and returns `this`
+
+- `StringBuilder delete(int startIndex, int endIndex)` - delete the code units with offsets `startIndex` to `endIndex - 1` and retuns `this`
+
+- `String toString()` - returns a string with the same data as the builder or buffer contents
